@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header{
+    background-color: #00aaff;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 920px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.form-container{
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 180px;
+    margin-top: 20px;
+}
+
+.input-group{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+
+
+.input-group input{
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group input:last-child {
+    margin-right: 0;
+}
+
+
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: absolute;
+    left: 480px;
+    top: 72px;
+    align-self: flex-end; /* Alinha os botões à direita */
+}
+
+
+.button-group .btn{
+   
+    padding: 10px;
+    margin:5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+}
+
+.btn.incluir {background-color: green;}
+.btn.editar {background-color: orange;}
+.btn.salvar {background-color: #00aaff;}
+.btn.cancelar {background-color: grey;}
+.btn.excluir {background-color: red;}
+
+.button-group .btn:disabled{
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 20px;
+}
+
+.pagination button{
+    padding: 10px;
+    margin: 0 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

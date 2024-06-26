@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contatostyle.css">
+
+    <title>Agenda contatos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Cadastro de Contato
+        </div>
+        <div class="form-container">
+            <form onsubmit="salvar(event)" id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Nome" disabled>
+                    <input type="text" id="surname" placeholder="Sobrenome" disabled>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="address" placeholder="Endereço" disabled>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="telephone" placeholder="Telefone" disabled>
+                </div>
+            </div>
+
+                <div class="button-group">
+                    <button onclick="incluir()" id="include" class="btn incluir">Incluir</button>
+                    <button disabled onclick="editar()" id="edit" class="btn editar">Editar</button disabled>
+                    <button disabled onclick="salvar()" id="save" class="btn salvar">Salvar</button disabled>
+                    <button disabled onclick="cancelar()" id="cancel" class="btn cancelar">Cancelar</button disabled>
+                    <button disabled onclick="excluir()" id="delet" class="btn excluir">Excluir</button>
+                </div>
+            </form>
+        </div>
+        <div class="pagination">
+            <button disabled id="botaoPrimeiro" onclick="primeiro()">|<</button>
+                    <button disabled id="botaoAnterior" onclick="anterior()"><</button>
+                            <button disabled id="botaoProximo" onclick="proximo()">></button>
+                            <button disabled id="botaoUltimo" onclick="ultimo()">>|</button>
+        </div>
+
+        <div class="footer">
+            Agenda contatos
+        </div>
+  
+
+    <script src="cadastro_contato.js"></script>
+</body>
+
+</html>
